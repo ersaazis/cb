@@ -1,5 +1,5 @@
 {
-    "name": "ersaazis/cb",
+    "name": "Ersaazis/CB",
     "description": "belajar",
     "type": "project",
     "license": "MIT",
@@ -13,6 +13,13 @@
     "autoload": {
         "psr-4": {
             "Ersaazis\\CB\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ersaazis\\CB\\Providers\\ErsaCBPackageServiceProvider"
+            ]
         }
     },
     "require": {}
