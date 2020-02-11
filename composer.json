@@ -1,0 +1,19 @@
+{
+    "name": "ersaazis/cb",
+    "description": "belajar",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ersaazis",
+            "email": "eam24maret@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Ersaazis\\CB\\": "src/"
+        }
+    },
+    "require": {}
+}
