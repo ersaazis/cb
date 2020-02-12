@@ -49,6 +49,7 @@ class Install extends Command
             $this->call('vendor:publish', ['--tag' => 'cb_hook']);
             $this->call('vendor:publish', ['--tag' => 'cb_asset', '--force' => true]);
             $this->call('vendor:publish', ['--tag' => 'cb_migration', '--force' => true]);
+            $this->call('vendor:publish', ['--tag' => 'cb_rebuild', '--force' => true]);
 
             /*
              * Add some env for CB
