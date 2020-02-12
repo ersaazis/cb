@@ -6,10 +6,10 @@
  * Time: 6:03 PM
  */
 
-namespace Ersaazis\CB\controllers\scaffolding\singletons;
+namespace ersaazis\cb\controllers\scaffolding\singletons;
 
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class ColumnSingleton
 {

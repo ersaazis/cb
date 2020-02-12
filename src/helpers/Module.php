@@ -1,10 +1,10 @@
 <?php
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
-use Ersaazis\CB\controllers\CBController;
-use Ersaazis\CB\controllers\scaffolding\ColumnSingleton;
+use ersaazis\cb\controllers\CBController;
+use ersaazis\cb\controllers\scaffolding\ColumnSingleton;
 use Illuminate\Support\Facades\DB;
 
 class Module
@@ -43,7 +43,7 @@ class Module
     }
 
     /**
-     * @return \Ersaazis\CB\controllers\scaffolding\singletons\ColumnSingleton
+     * @return \ersaazis\cb\controllers\scaffolding\singletons\ColumnSingleton
      */
     public function getColumnSingleton()
     {

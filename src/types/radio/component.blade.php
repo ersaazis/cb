@@ -1,5 +1,5 @@
 @include("types::layout_header")
-        <?php /** @var \Ersaazis\CB\types\radio\RadioModel $column */ ?>
+        <?php /** @var \ersaazis\cb\types\radio\RadioModel $column */ ?>
         @foreach($column->getOptions() as $key=>$value)
             <?php
                 $columnValue = old($column->getName())?:($column->getDefaultValue())?:$column->getValue();

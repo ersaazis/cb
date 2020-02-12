@@ -1,10 +1,10 @@
 <?php
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 use Illuminate\Http\File;
 use Illuminate\Support\Facades\Cache;
-use Ersaazis\CB\exceptions\CBValidationException;
+use ersaazis\cb\exceptions\CBValidationException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Validation\ValidationException;
@@ -493,17 +493,17 @@ class CB
         Route::post($prefix, ['uses' => $controller, 'as' => $alias]);
     }
 
-    public function routeGroupBackend(callable $callback, $namespace = 'Ersaazis\CB\controllers') {
+    public function routeGroupBackend(callable $callback, $namespace = 'ersaazis\cb\controllers') {
         Route::group([
-            'middleware' => ['web', \Ersaazis\CB\middlewares\CBBackend::class],
+            'middleware' => ['web', \ersaazis\cb\middlewares\CBBackend::class],
             'prefix' => cb()->getAdminPath(),
             'namespace' => $namespace,
         ], $callback);
     }
 
-    public function routeGroupDeveloper(callable $callback, $namespace = 'Ersaazis\CB\controllers') {
+    public function routeGroupDeveloper(callable $callback, $namespace = 'ersaazis\cb\controllers') {
         Route::group([
-            'middleware' => ['web', \Ersaazis\CB\middlewares\CBDeveloper::class],
+            'middleware' => ['web', \ersaazis\cb\middlewares\CBDeveloper::class],
             'prefix' => "developer/".getSetting('developer_path'),
             'namespace' => $namespace,
         ], $callback);

@@ -6,9 +6,9 @@
  * Time: 8:30 AM
  */
 
-namespace Ersaazis\CB\controllers\scaffolding\traits;
+namespace ersaazis\cb\controllers\scaffolding\traits;
 
-use Ersaazis\CB\controllers\scaffolding\singletons\ColumnSingleton;
+use ersaazis\cb\controllers\scaffolding\singletons\ColumnSingleton;
 
 trait Join
 {

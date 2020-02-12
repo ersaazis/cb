@@ -1,5 +1,5 @@
 <?php
-    /** @var \Ersaazis\CB\types\checkbox\CheckboxModel $column */
+    /** @var \ersaazis\cb\types\checkbox\CheckboxModel $column */
     $filterName = "filter_".slug($column->getFilterColumn(),"_");
     $filterValue = sanitizeXSS(request($filterName));
 ?>

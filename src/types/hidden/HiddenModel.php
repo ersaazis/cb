@@ -6,9 +6,9 @@
  * Time: 10:51 PM
  */
 
-namespace Ersaazis\CB\types\image;
+namespace ersaazis\cb\types\image;
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class HiddenModel extends ColumnModel
 {

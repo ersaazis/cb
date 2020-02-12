@@ -6,9 +6,9 @@
  * Time: 10:51 PM
  */
 
-namespace Ersaazis\CB\types\wysiwyg;
+namespace ersaazis\cb\types\wysiwyg;
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class WysiwygModel extends ColumnModel
 {

@@ -6,9 +6,9 @@
  * Time: 10:51 PM
  */
 
-namespace Ersaazis\CB\types\password;
+namespace ersaazis\cb\types\password;
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class PasswordModel extends ColumnModel
 {

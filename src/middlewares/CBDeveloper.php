@@ -1,6 +1,6 @@
 <?php
 
-namespace Ersaazis\CB\middlewares;
+namespace ersaazis\cb\middlewares;
 
 use App\Http\Controllers\CBHook;
 use Closure;

@@ -1,4 +1,4 @@
-<?php /** @var \Ersaazis\CB\models\ColumnModel $column */ ?>
+<?php /** @var \ersaazis\cb\models\ColumnModel $column */ ?>
     </div>
 </div>
 

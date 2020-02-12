@@ -6,7 +6,7 @@
  * Time: 8:59 PM
  */
 
-namespace Ersaazis\CB\models;
+namespace ersaazis\cb\models;
 
 
 class ColumnModel

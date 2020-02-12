@@ -6,7 +6,7 @@
  * Time: 11:48 PM
  */
 
-namespace Ersaazis\CB\controllers\traits;
+namespace ersaazis\cb\controllers\traits;
 
 use Illuminate\Support\Facades\Cache;
 

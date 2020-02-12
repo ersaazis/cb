@@ -6,9 +6,9 @@
  * Time: 5:43 PM
  */
 
-namespace Ersaazis\CB\types\radio;
+namespace ersaazis\cb\types\radio;
 
-use Ersaazis\CB\types\TypesHook;
+use ersaazis\cb\types\TypesHook;
 
 class Hook extends TypesHook
 {

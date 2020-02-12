@@ -6,9 +6,9 @@
  * Time: 10:51 PM
  */
 
-namespace Ersaazis\CB\types\money;
+namespace ersaazis\cb\types\money;
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class MoneyModel extends ColumnModel
 {

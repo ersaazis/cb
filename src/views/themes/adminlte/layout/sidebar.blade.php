@@ -32,7 +32,7 @@
 
                 <!-- Sidebar Menu Has Been Cached -->
                 @foreach(cb()->sidebar()->all() as $menu)
-                    <?php /** @var \Ersaazis\CB\models\SidebarModel $menu */?>
+                    <?php /** @var \ersaazis\cb\models\SidebarModel $menu */?>
                     <li class='{{($menu->getSub())?"treeview":""}} {{ ($menu->getPermalink() && request()->is(cb()->getAdminPath()."/".$menu->getPermalink()."*"))?"active":"inactive"}}'>
                         <a href='{{ $menu->getUrl() }}'>
                             <i class='{{$menu->getIcon()}}'></i> <span>{{$menu->getName()}}</span>

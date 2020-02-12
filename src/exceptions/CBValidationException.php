@@ -6,7 +6,7 @@
  * Time: 2:59 PM
  */
 
-namespace Ersaazis\CB\exceptions;
+namespace ersaazis\cb\exceptions;
 
 
 class CBValidationException extends \Exception

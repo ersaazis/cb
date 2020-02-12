@@ -6,9 +6,9 @@
  * Time: 7:08 PM
  */
 
-namespace Ersaazis\CB\controllers;
+namespace ersaazis\cb\controllers;
 
-use Ersaazis\CB\exceptions\CBValidationException;
+use ersaazis\cb\exceptions\CBValidationException;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Session;
 

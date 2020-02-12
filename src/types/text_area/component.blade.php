@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    <?php /** @var \Ersaazis\CB\types\text\TextAreaModel $column */ ?>
+    <?php /** @var \ersaazis\cb\types\text\TextAreaModel $column */ ?>
     <textarea name="{{$column->getName()}}" id="{{$column->getName()}}"
               {{ $column->getRequired()?'required':''}}
               {{ $column->getReadonly()?'readonly':''}}

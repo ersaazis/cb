@@ -6,9 +6,9 @@
  * Time: 10:51 PM
  */
 
-namespace Ersaazis\CB\types\select_table;
+namespace ersaazis\cb\types\select_table;
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class SelectTableModel extends ColumnModel
 {

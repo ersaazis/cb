@@ -1,4 +1,4 @@
-<?php namespace Ersaazis\CB\commands;
+<?php namespace ersaazis\cb\commands;
 
 use App;
 use Cache;

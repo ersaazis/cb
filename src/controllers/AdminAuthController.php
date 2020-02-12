@@ -1,7 +1,7 @@
-<?php namespace Ersaazis\CB\controllers;
+<?php namespace ersaazis\cb\controllers;
 
-use Ersaazis\CB\exceptions\CBValidationException;
-use Ersaazis\CB\helpers\MailHelper;
+use ersaazis\cb\exceptions\CBValidationException;
+use ersaazis\cb\helpers\MailHelper;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;

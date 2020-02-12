@@ -6,10 +6,10 @@
  * Time: 5:43 PM
  */
 
-namespace Ersaazis\CB\types\password;
+namespace ersaazis\cb\types\password;
 
-use Ersaazis\CB\models\ColumnModel;
-use Ersaazis\CB\types\TypesHook;
+use ersaazis\cb\models\ColumnModel;
+use ersaazis\cb\types\TypesHook;
 use Illuminate\Support\Facades\Hash;
 
 class Hook extends TypesHook

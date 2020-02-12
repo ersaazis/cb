@@ -1,14 +1,14 @@
-<?php namespace Ersaazis\CB\Providers;
+<?php namespace ersaazis\cb\Providers;
 
-use Ersaazis\CB\commands\DeveloperCommand;
-use Ersaazis\CB\commands\Generate;
-use Ersaazis\CB\commands\MigrateData;
-use Ersaazis\CB\controllers\scaffolding\singletons\ColumnSingleton;
-use Ersaazis\CB\helpers\MiscellanousSingleton;
+use ersaazis\cb\commands\DeveloperCommand;
+use ersaazis\cb\commands\Generate;
+use ersaazis\cb\commands\MigrateData;
+use ersaazis\cb\controllers\scaffolding\singletons\ColumnSingleton;
+use ersaazis\cb\helpers\MiscellanousSingleton;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
-use Ersaazis\CB\commands\Install;
+use ersaazis\cb\commands\Install;
 use App;
 
 class ErsaCBPackageServiceProvider extends ServiceProvider

@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    @php /** @var \Ersaazis\CB\types\email\EmailModel $column */  @endphp
+    @php /** @var \ersaazis\cb\types\email\EmailModel $column */  @endphp
         <input type='email' title="{{ $column->getLabel() }}"
                placeholder="{{ $column->getPlaceholder() }}"
                {{ $column->getRequired()?'required':''}}

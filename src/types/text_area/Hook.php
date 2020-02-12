@@ -6,9 +6,9 @@
  * Time: 5:43 PM
  */
 
-namespace Ersaazis\CB\types\text_area;
+namespace ersaazis\cb\types\text_area;
 
-use Ersaazis\CB\types\TypesHook;
+use ersaazis\cb\types\TypesHook;
 use Illuminate\Support\Str;
 
 class Hook extends TypesHook

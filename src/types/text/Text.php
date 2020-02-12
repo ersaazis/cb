@@ -6,11 +6,11 @@
  * Time: 6:00 PM
  */
 
-namespace Ersaazis\CB\types;
+namespace ersaazis\cb\types;
 
-use Ersaazis\CB\controllers\scaffolding\traits\DefaultOption;
-use Ersaazis\CB\controllers\scaffolding\traits\Join;
-use Ersaazis\CB\types\text\TextModel;
+use ersaazis\cb\controllers\scaffolding\traits\DefaultOption;
+use ersaazis\cb\controllers\scaffolding\traits\Join;
+use ersaazis\cb\types\text\TextModel;
 
 class Text
 {

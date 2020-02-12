@@ -1,8 +1,8 @@
-<?php namespace Ersaazis\CB\commands;
+<?php namespace ersaazis\cb\commands;
 
 use App;
 use Cache;
-use Ersaazis\CB\helpers\ComposerHelper;
+use ersaazis\cb\helpers\ComposerHelper;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

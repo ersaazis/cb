@@ -55,7 +55,7 @@
                     <div style="background: #fefefe; color: red;padding: 10px">
                     <?php
                         echo nl2br(trim('
-                        use Ersaazis\CB\helpers\MailHelper;
+                        use ersaazis\cb\helpers\MailHelper;
 
                         $mail = new MailHelper();
                         $mail->sender($sender_email, $sender_name);

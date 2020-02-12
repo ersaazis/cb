@@ -6,15 +6,15 @@
  * Time: 7:37 PM
  */
 
-namespace Ersaazis\CB\controllers\traits;
+namespace ersaazis\cb\controllers\traits;
 
 use Closure;
-use Ersaazis\CB\controllers\partials\ButtonColor;
-use Ersaazis\CB\controllers\partials\SidebarStyle;
-use Ersaazis\CB\controllers\scaffolding\traits\ColumnsRegister;
-use Ersaazis\CB\models\AddActionButtonModel;
-use Ersaazis\CB\models\IndexActionButtonModel;
-use Ersaazis\CB\types\Hidden;
+use ersaazis\cb\controllers\partials\ButtonColor;
+use ersaazis\cb\controllers\partials\SidebarStyle;
+use ersaazis\cb\controllers\scaffolding\traits\ColumnsRegister;
+use ersaazis\cb\models\AddActionButtonModel;
+use ersaazis\cb\models\IndexActionButtonModel;
+use ersaazis\cb\types\Hidden;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 

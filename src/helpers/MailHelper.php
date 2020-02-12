@@ -6,7 +6,7 @@
  * Time: 12:51 AM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 use Illuminate\Support\Facades\Mail;
 

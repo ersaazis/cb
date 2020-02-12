@@ -6,12 +6,12 @@
  * Time: 11:44 PM
  */
 
-namespace Ersaazis\CB\controllers\traits;
+namespace ersaazis\cb\controllers\traits;
 
-use Ersaazis\CB\helpers\SchemaHelper;
+use ersaazis\cb\helpers\SchemaHelper;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 trait Query
 {

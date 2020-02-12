@@ -6,7 +6,7 @@
  * Time: 10:33 PM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
 class CurlHelper

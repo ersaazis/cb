@@ -6,12 +6,12 @@
  * Time: 6:00 PM
  */
 
-namespace Ersaazis\CB\types;
+namespace ersaazis\cb\types;
 
-use Ersaazis\CB\controllers\scaffolding\traits\DefaultOption;
-use Ersaazis\CB\controllers\scaffolding\traits\Join;
-use Ersaazis\CB\models\ColumnModel;
-use Ersaazis\CB\types\select_table\SelectTableModel;
+use ersaazis\cb\controllers\scaffolding\traits\DefaultOption;
+use ersaazis\cb\controllers\scaffolding\traits\Join;
+use ersaazis\cb\models\ColumnModel;
+use ersaazis\cb\types\select_table\SelectTableModel;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\DB;
 

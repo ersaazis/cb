@@ -6,7 +6,7 @@
  * Time: 1:29 AM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
 use Illuminate\Support\Facades\Cache;

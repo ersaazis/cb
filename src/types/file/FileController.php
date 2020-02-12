@@ -6,7 +6,7 @@
  * Time: 10:38 PM
  */
 
-namespace Ersaazis\CB\types\file;
+namespace ersaazis\cb\types\file;
 
 use Illuminate\Routing\Controller as BaseController;
 

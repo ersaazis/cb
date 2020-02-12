@@ -6,7 +6,7 @@
  * Time: 7:51 PM
  */
 
-namespace Ersaazis\CB\controllers\partials;
+namespace ersaazis\cb\controllers\partials;
 
 
 class ButtonColor

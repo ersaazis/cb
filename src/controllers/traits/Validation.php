@@ -6,10 +6,10 @@
  * Time: 11:44 PM
  */
 
-namespace Ersaazis\CB\controllers\traits;
+namespace ersaazis\cb\controllers\traits;
 
 use Illuminate\Support\Facades\Validator;
-use Ersaazis\CB\exceptions\CBValidationException;
+use ersaazis\cb\exceptions\CBValidationException;
 
 trait Validation
 {

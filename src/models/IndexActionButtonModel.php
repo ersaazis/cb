@@ -6,7 +6,7 @@
  * Time: 9:53 PM
  */
 
-namespace Ersaazis\CB\models;
+namespace ersaazis\cb\models;
 
 
 class IndexActionButtonModel

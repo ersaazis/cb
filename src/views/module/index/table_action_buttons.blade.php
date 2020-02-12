@@ -1,6 +1,6 @@
 @if(is_array(module()->getData("add_action_button")))
 @foreach(module()->getData("add_action_button") as $a)
-    <?php /** @var \Ersaazis\CB\models\AddActionButtonModel $a */?>
+    <?php /** @var \ersaazis\cb\models\AddActionButtonModel $a */?>
     @php
         if(is_callable($a->getUrl())) {
             $a->setUrl(call_user_func($a->getUrl(), $row));

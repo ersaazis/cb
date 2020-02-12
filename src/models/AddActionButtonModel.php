@@ -6,7 +6,7 @@
  * Time: 12:30 AM
  */
 
-namespace Ersaazis\CB\models;
+namespace ersaazis\cb\models;
 
 
 class AddActionButtonModel

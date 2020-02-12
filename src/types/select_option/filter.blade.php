@@ -1,5 +1,5 @@
 <?php
-    /** @var \Ersaazis\CB\types\text\TextModel $column */
+    /** @var \ersaazis\cb\types\text\TextModel $column */
     $filterName = "filter_".slug($column->getFilterColumn(),"_");
     $filterValue = sanitizeXSS(request($filterName));
 ?>

@@ -6,7 +6,7 @@
  * Time: 1:19 PM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
 class HTMLHelper

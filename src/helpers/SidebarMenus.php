@@ -1,10 +1,10 @@
 <?php
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
-use Ersaazis\CB\controllers\CBController;
-use Ersaazis\CB\models\SidebarModel;
+use ersaazis\cb\controllers\CBController;
+use ersaazis\cb\models\SidebarModel;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 

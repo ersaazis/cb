@@ -1,4 +1,4 @@
-<?php /** @var \Ersaazis\CB\models\ColumnModel $column */ ?>
+<?php /** @var \ersaazis\cb\models\ColumnModel $column */ ?>
 <div class='form-group {{ ($errors->first( $column->getName() ))?"has-error":"" }}' id='form-group-{{ $column->getName() }}'>
     <label>
         {{ $column->getLabel() }}

@@ -1,5 +1,5 @@
 <?php 
-namespace Ersaazis\CB\hooks;
+namespace ersaazis\cb\hooks;
 
 interface CBHook {
 

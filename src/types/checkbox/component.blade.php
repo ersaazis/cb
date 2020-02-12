@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    <?php /** @var \Ersaazis\CB\types\checkbox\CheckboxModel $column */ ?>
+    <?php /** @var \ersaazis\cb\types\checkbox\CheckboxModel $column */ ?>
 
     @foreach($column->getCheckboxOptions() as $key=>$value)
         <div class="{{ $column->getDisabled()?"disabled":"" }}">
@@ -9,7 +9,7 @@
                        {!!  $column->getOnchangeJsFunctionName()?"onChange='".$column->getOnchangeJsFunctionName()."'":"" !!}
                        {!! $column->getOnclickJsFunctionName()?"onClick='".$column->getOnclickJsFunctionName()."'":"" !!}
                        {!! $column->getOnblurJsFunctionName()?"onBlur='".$column->getOnblurJsFunctionName()."'":"" !!}
-                       {{ $column->getValue() && in_array($value, \Ersaazis\CB\types\checkbox\CheckboxHelper::parseValuesToArray($column->getValue()))?"checked":"" }}
+                       {{ $column->getValue() && in_array($value, \ersaazis\cb\types\checkbox\CheckboxHelper::parseValuesToArray($column->getValue()))?"checked":"" }}
                        name="{{ $column->getName() }}[]"
                        value="{{ $key }}"> {{ $value }}
             </label>

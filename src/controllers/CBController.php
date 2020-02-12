@@ -1,13 +1,13 @@
-<?php namespace Ersaazis\CB\controllers;
+<?php namespace ersaazis\cb\controllers;
 
-use Ersaazis\CB\controllers\scaffolding\traits\Join;
-use Ersaazis\CB\controllers\traits\ColumnIntervention;
-use Ersaazis\CB\controllers\traits\Query;
-use Ersaazis\CB\controllers\traits\Validation;
-use Ersaazis\CB\controllers\scaffolding\traits\ColumnsRegister;
-use Ersaazis\CB\controllers\traits\ControllerSetting;
-use Ersaazis\CB\exceptions\CBValidationException;
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\controllers\scaffolding\traits\Join;
+use ersaazis\cb\controllers\traits\ColumnIntervention;
+use ersaazis\cb\controllers\traits\Query;
+use ersaazis\cb\controllers\traits\Validation;
+use ersaazis\cb\controllers\scaffolding\traits\ColumnsRegister;
+use ersaazis\cb\controllers\traits\ControllerSetting;
+use ersaazis\cb\exceptions\CBValidationException;
+use ersaazis\cb\models\ColumnModel;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;

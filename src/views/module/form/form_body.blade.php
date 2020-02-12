@@ -1,6 +1,6 @@
 @php $exist = []; @endphp
 @foreach(module()->getColumnSingleton()->getAddEditColumns() as $index=>$column)
-    <?php /** @var \Ersaazis\CB\models\ColumnModel $column */ ?>
+    <?php /** @var \ersaazis\cb\models\ColumnModel $column */ ?>
     @if(!in_array($column->getType(), $exist))
         @if(file_exists(base_path('vendor/crocodicstudio/crudbooster/src/types/'.$column->getType().'/asset.blade.php')))
             @include('types::'.$column->getType().'.asset')

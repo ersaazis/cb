@@ -1,5 +1,5 @@
 <?php
-    /** @var \Ersaazis\CB\types\radio\RadioModel $column */
+    /** @var \ersaazis\cb\types\radio\RadioModel $column */
     $filterName = "filter_".slug($column->getFilterColumn(),"_");
     $filterValue = sanitizeXSS(request($filterName));
 ?>

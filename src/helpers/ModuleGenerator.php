@@ -6,7 +6,7 @@
  * Time: 8:14 AM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
 use Illuminate\Support\Facades\DB;

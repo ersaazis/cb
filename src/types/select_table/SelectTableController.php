@@ -6,7 +6,7 @@
  * Time: 10:38 PM
  */
 
-namespace Ersaazis\CB\types\select_table;
+namespace ersaazis\cb\types\select_table;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\DB;

@@ -6,9 +6,9 @@
  * Time: 5:43 PM
  */
 
-namespace Ersaazis\CB\types\email;
+namespace ersaazis\cb\types\email;
 
-use Ersaazis\CB\types\TypesHook;
+use ersaazis\cb\types\TypesHook;
 
 class Hook extends TypesHook
 {

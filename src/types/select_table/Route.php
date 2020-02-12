@@ -1,5 +1,5 @@
 <?php
 
 cb()->routeGroupBackend(function () {
-    cb()->routePost("select-table-lookup",'\Ersaazis\CB\types\select_table\SelectTableController@postLookup');
+    cb()->routePost("select-table-lookup",'\ersaazis\cb\types\select_table\SelectTableController@postLookup');
 });

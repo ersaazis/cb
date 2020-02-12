@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    @php /** @var \Ersaazis\CB\types\date\DateModel $column */ @endphp
+    @php /** @var \ersaazis\cb\types\date\DateModel $column */ @endphp
         <input type='text' title="{{ $column->getLabel() }}"
                placeholder="{{ $column->getPlaceholder() }}"
                {{ $column->getRequired()?'required':''}}

@@ -1,4 +1,4 @@
-<?php namespace Ersaazis\CB\controllers;
+<?php namespace ersaazis\cb\controllers;
 
 use File;
 use Image;

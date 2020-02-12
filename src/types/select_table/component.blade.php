@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    <?php /** @var \Ersaazis\CB\types\select_table\SelectTableModel $column */?>
+    <?php /** @var \ersaazis\cb\types\select_table\SelectTableModel $column */?>
     <select style="width: 100%" id="select-{{ $column->getName() }}" class="form-control select2"
             {{ $column->getRequired()?'required':''}}
             {{ $column->getReadonly()?'readonly':''}}

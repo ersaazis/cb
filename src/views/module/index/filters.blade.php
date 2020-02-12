@@ -12,7 +12,7 @@
 
             @foreach($columns as $column)
                 @if(file_exists(base_path('vendor/crocodicstudio/crudbooster/src/types/'.$column->getType().'/filter.blade.php')))
-                @php /* @var \Ersaazis\CB\models\ColumnModel $column */ @endphp
+                @php /* @var \ersaazis\cb\models\ColumnModel $column */ @endphp
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="">{{ $column->getLabel() }}</label>
                     <div class="col-sm-8">

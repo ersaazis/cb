@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    @php /** @var \Ersaazis\CB\types\number\NumberModel $column */  @endphp
+    @php /** @var \ersaazis\cb\types\number\NumberModel $column */  @endphp
         <input type='number' title="{{ $column->getLabel() }}"
                placeholder="{{ $column->getPlaceholder() }}"
                {{ $column->getRequired()?'required':''}}

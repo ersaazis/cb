@@ -6,10 +6,10 @@
  * Time: 9:28 PM
  */
 
-namespace Ersaazis\CB\controllers;
+namespace ersaazis\cb\controllers;
 
 
-use Ersaazis\CB\exceptions\CBValidationException;
+use ersaazis\cb\exceptions\CBValidationException;
 use Doctrine\DBAL\Query\QueryException;
 use Illuminate\Support\Facades\DB;
 

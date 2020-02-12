@@ -1,4 +1,4 @@
-<?php namespace Ersaazis\CB\controllers;
+<?php namespace ersaazis\cb\controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\DB;

@@ -6,7 +6,7 @@
  * Time: 11:24 PM
  */
 
-namespace Ersaazis\CB\models;
+namespace ersaazis\cb\models;
 
 
 class SidebarModel

@@ -6,7 +6,7 @@
  * Time: 3:00 PM
  */
 
-namespace Ersaazis\CB\commands;
+namespace ersaazis\cb\commands;
 
 
 use Illuminate\Console\Command;

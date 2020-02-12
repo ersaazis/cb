@@ -10,7 +10,7 @@
             @endif
 
             @foreach(module()->getColumnSingleton()->getIndexColumns() as $column)
-                @php /** @var $column \Ersaazis\CB\models\ColumnModel */ @endphp
+                @php /** @var $column \ersaazis\cb\models\ColumnModel */ @endphp
                 <th width="{{ $column->getColumnWidth()?:"auto" }}">
                     <a title="Click to sorting {{ (request('order_sort')=='asc')?'asc':'desc' }} by {{ $column->getLabel() }}" href="{{ request()->fullUrlWithQuery(['order_by'=>$column->getOrderByColumn(),'order_sort'=>((request('order_sort')=='desc')?'asc':'desc') ]) }}">{{ $column->getLabel() }}
                         @if(request('order_by')==$column->getOrderByColumn())
@@ -53,7 +53,7 @@
             @foreach(module()->getColumnSingleton()->getIndexColumns() as $column)
                 <td>
                     <?php
-                        /** @var \Ersaazis\CB\models\ColumnModel $column */
+                        /** @var \ersaazis\cb\models\ColumnModel $column */
                         $value = getTypeHook($column->getType())->indexRender($row, $column);
                         $value = call_user_func($column->getIndexDisplayTransform(), $value, $row);
                         echo $value;

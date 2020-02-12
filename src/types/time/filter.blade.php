@@ -1,4 +1,4 @@
-<?php /** @var \Ersaazis\CB\types\time\TimeModel $column */  ?>
+<?php /** @var \ersaazis\cb\types\time\TimeModel $column */  ?>
 
 <div class="row">
     <div class="col-sm-6">

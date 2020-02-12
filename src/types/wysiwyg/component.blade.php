@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    <?php /** @var \Ersaazis\CB\types\wysiwyg\WysiwygModel $column */ ?>
+    <?php /** @var \ersaazis\cb\types\wysiwyg\WysiwygModel $column */ ?>
     @push('bottom')
         <script type="text/javascript">
             $(document).ready(function () {

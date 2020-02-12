@@ -1,9 +1,9 @@
 <?php
 
-namespace Ersaazis\CB\controllers;
+namespace ersaazis\cb\controllers;
 
-use Ersaazis\CB\exceptions\CBValidationException;
-use Ersaazis\CB\helpers\Plugin;
+use ersaazis\cb\exceptions\CBValidationException;
+use ersaazis\cb\helpers\Plugin;
 use Doctrine\DBAL\Query\QueryException;
 use Illuminate\Support\Facades\DB;
 

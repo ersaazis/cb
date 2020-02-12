@@ -795,7 +795,7 @@
                 <div class="modal-body">
 
                     <?php
-                    $font = new \Ersaazis\CB\helpers\FontAwesome();
+                    $font = new \ersaazis\cb\helpers\FontAwesome();
                     $fontData = [
                         ["data"=>$font->text(),"label"=>"Text"],
                         ["data"=>$font->web(),"label"=>"Web"],

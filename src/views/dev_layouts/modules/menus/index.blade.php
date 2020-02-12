@@ -95,7 +95,7 @@
             @php $menus = cb()->sidebar()->all(false); @endphp
             <ul class='draggable-menu draggable-menu-active'>
                 @foreach($menus as $menu)
-                    <?php /** @var \Ersaazis\CB\models\SidebarModel $menu */?>
+                    <?php /** @var \ersaazis\cb\models\SidebarModel $menu */?>
                     <li data-id="{{ $menu->getId() }}" data-name="{{ $menu->getName() }}">
                         <div class="gray-gradient">
                             <span>:::

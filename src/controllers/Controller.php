@@ -1,6 +1,6 @@
 <?php
 
-namespace Ersaazis\CB\controllers;
+namespace ersaazis\cb\controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 

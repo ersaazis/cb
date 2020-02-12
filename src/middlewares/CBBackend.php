@@ -1,10 +1,10 @@
 <?php
 
-namespace Ersaazis\CB\middlewares;
+namespace ersaazis\cb\middlewares;
 
 use App\Http\CBHook;
 use Closure;
-use Ersaazis\CB\helpers\CB;
+use ersaazis\cb\helpers\CB;
 use CRUDBooster;
 
 class CBBackend

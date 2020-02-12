@@ -18,13 +18,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Ersaazis\\CB\\": "src/"
+            "ersaazis\\cb\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Ersaazis\\CB\\Providers\\ErsaCBPackageServiceProvider"
+                "ersaazis\\cb\\Providers\\ErsaCBPackageServiceProvider"
             ]
         }
     }

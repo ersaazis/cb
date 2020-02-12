@@ -6,10 +6,10 @@
  * Time: 5:44 PM
  */
 
-namespace Ersaazis\CB\types;
+namespace ersaazis\cb\types;
 
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 use Illuminate\Database\Query\Builder;
 
 interface TypesHookInterface

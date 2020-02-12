@@ -6,7 +6,7 @@
  * Time: 12:23 AM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 
 class MiscellanousSingleton

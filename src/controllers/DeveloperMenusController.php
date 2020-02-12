@@ -6,11 +6,11 @@
  * Time: 9:28 PM
  */
 
-namespace Ersaazis\CB\controllers;
+namespace ersaazis\cb\controllers;
 
 
-use Ersaazis\CB\exceptions\CBValidationException;
-use Ersaazis\CB\helpers\CacheHelper;
+use ersaazis\cb\exceptions\CBValidationException;
+use ersaazis\cb\helpers\CacheHelper;
 use Illuminate\Support\Facades\DB;
 
 class DeveloperMenusController extends Controller

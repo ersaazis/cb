@@ -1,8 +1,8 @@
-<?php namespace Ersaazis\CB\commands;
+<?php namespace ersaazis\cb\commands;
 
 use App;
 use Cache;
-use Ersaazis\CB\helpers\ModuleGenerator;
+use ersaazis\cb\helpers\ModuleGenerator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;

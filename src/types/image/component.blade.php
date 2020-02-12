@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    @php /** @var \Ersaazis\CB\types\image\ImageModel $column */  @endphp
+    @php /** @var \ersaazis\cb\types\image\ImageModel $column */  @endphp
     <div class="upload-wrapper">
         <div class="upload-preview" style="padding: 5px">
             @if($column->getValue())

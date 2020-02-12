@@ -4,7 +4,7 @@
             <th width="25%">{{ $column->getLabel() }}</th>
             <td>
                 <?php
-                /** @var \Ersaazis\CB\models\ColumnModel $column */
+                /** @var \ersaazis\cb\models\ColumnModel $column */
                 $value = getTypeHook($column->getType())->detailRender($row, $column);
                 $value = call_user_func($column->getDetailDisplayTransform(), $value, $row);
                 echo $value;

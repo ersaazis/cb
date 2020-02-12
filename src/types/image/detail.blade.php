@@ -1,4 +1,4 @@
-@php /** @var \Ersaazis\CB\models\ColumnModel $column */  @endphp
+@php /** @var \ersaazis\cb\models\ColumnModel $column */  @endphp
 @if($column->getValue())
     <div align="left">
         <a data-lightbox="preview-image" title="Preview Image" href="{{ ($column->getValue())?asset($column->getValue()):"javascript:;" }}">

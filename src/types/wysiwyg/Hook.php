@@ -6,9 +6,9 @@
  * Time: 5:43 PM
  */
 
-namespace Ersaazis\CB\types\wysiwyg;
+namespace ersaazis\cb\types\wysiwyg;
 
-use Ersaazis\CB\types\TypesHook;
+use ersaazis\cb\types\TypesHook;
 use Illuminate\Support\Str;
 
 class Hook extends TypesHook

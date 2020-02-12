@@ -62,7 +62,7 @@ if(!function_exists("isConfigCached")) {
 
 if(!function_exists("miscellanousSingleton")) {
     /**
-     * @return \Ersaazis\CB\helpers\MiscellanousSingleton
+     * @return \ersaazis\cb\helpers\MiscellanousSingleton
      */
     function miscellanousSingleton() {
         return app("MiscellanousSingleton");
@@ -249,7 +249,7 @@ if(!function_exists('slug')) {
 
 if(!function_exists('columnSingleton')) {
     /**
-     * @return \Ersaazis\CB\controllers\scaffolding\singletons\ColumnSingleton
+     * @return \ersaazis\cb\controllers\scaffolding\singletons\ColumnSingleton
      */
     function columnSingleton() {
         return app('ColumnSingleton');
@@ -259,7 +259,7 @@ if(!function_exists('columnSingleton')) {
 if(!function_exists('cbHook'))
 {
     /**
-     * @return Ersaazis\CB\hooks\CBHook
+     * @return ersaazis\cb\hooks\CBHook
      */
     function cbHook()
     {
@@ -272,10 +272,10 @@ if(!function_exists('getTypeHook'))
 {
     /**
      * @param string $type
-     * @return Ersaazis\CB\types\TypesHookInterface
+     * @return ersaazis\cb\types\TypesHookInterface
      */
     function getTypeHook($type) {
-        $className = '\Ersaazis\CB\types\\'.$type.'\Hook';
+        $className = '\ersaazis\cb\types\\'.$type.'\Hook';
         $typeClass = new $className();
         return $typeClass;
     }
@@ -293,7 +293,7 @@ if(!function_exists('cb'))
 {
     function cb()
     {
-        return new \Ersaazis\CB\helpers\CB();
+        return new \ersaazis\cb\helpers\CB();
     }
 }
 
@@ -323,7 +323,7 @@ if(!function_exists("strRandom")) {
 if(!function_exists('module')) {
     function module()
     {
-        $module = new \Ersaazis\CB\helpers\Module();
+        $module = new \ersaazis\cb\helpers\Module();
         return $module;
     }
 }

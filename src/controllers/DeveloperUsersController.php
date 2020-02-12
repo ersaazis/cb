@@ -6,10 +6,10 @@
  * Time: 9:28 PM
  */
 
-namespace Ersaazis\CB\controllers;
+namespace ersaazis\cb\controllers;
 
-use Ersaazis\CB\exceptions\CBValidationException;
-use Ersaazis\CB\helpers\ModuleGenerator;
+use ersaazis\cb\exceptions\CBValidationException;
+use ersaazis\cb\helpers\ModuleGenerator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 

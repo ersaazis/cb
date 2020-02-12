@@ -1,5 +1,5 @@
 @include("types::layout_header")
-        <?php /** @var \Ersaazis\CB\types\text\TextModel $column */  ?>
+        <?php /** @var \ersaazis\cb\types\text\TextModel $column */  ?>
         <input type='text'
                title="{{ $column->getLabel() }}"
                placeholder="{{ $column->getPlaceholder() }}"

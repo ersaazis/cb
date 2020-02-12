@@ -1,5 +1,5 @@
 @include("types::layout_header")
-    <?php /** @var \Ersaazis\CB\types\password\PasswordModel $column */ ?>
+    <?php /** @var \ersaazis\cb\types\password\PasswordModel $column */ ?>
         <input type='password' title="{{ $column->getLabel() }}"
                placeholder="{{ $column->getPlaceholder() }}"
                {{ $column->getRequired()?'required':''}}

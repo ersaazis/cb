@@ -6,7 +6,7 @@
  * Time: 4:50 PM
  */
 
-namespace Ersaazis\CB\helpers;
+namespace ersaazis\cb\helpers;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Log;

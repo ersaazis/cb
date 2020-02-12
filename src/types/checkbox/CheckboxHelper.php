@@ -6,7 +6,7 @@
  * Time: 6:00 PM
  */
 
-namespace Ersaazis\CB\types\checkbox;
+namespace ersaazis\cb\types\checkbox;
 
 class CheckboxHelper
 {

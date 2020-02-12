@@ -1,4 +1,4 @@
-<?php /** @var \Ersaazis\CB\types\date\DateModel $column */  ?>
+<?php /** @var \ersaazis\cb\types\date\DateModel $column */  ?>
 
 <div class="row">
     <div class="col-sm-6">

@@ -6,9 +6,9 @@
  * Time: 10:51 PM
  */
 
-namespace Ersaazis\CB\types\checkbox;
+namespace ersaazis\cb\types\checkbox;
 
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\models\ColumnModel;
 
 class CheckboxModel extends ColumnModel
 {

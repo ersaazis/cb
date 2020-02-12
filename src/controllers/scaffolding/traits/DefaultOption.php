@@ -6,10 +6,10 @@
  * Time: 6:00 PM
  */
 
-namespace Ersaazis\CB\controllers\scaffolding\traits;
+namespace ersaazis\cb\controllers\scaffolding\traits;
 
-use Ersaazis\CB\controllers\scaffolding\singletons\ColumnSingleton;
-use Ersaazis\CB\models\ColumnModel;
+use ersaazis\cb\controllers\scaffolding\singletons\ColumnSingleton;
+use ersaazis\cb\models\ColumnModel;
 
 trait DefaultOption
 {

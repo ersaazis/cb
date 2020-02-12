@@ -6,10 +6,10 @@
  * Time: 5:43 PM
  */
 
-namespace Ersaazis\CB\types\checkbox;
+namespace ersaazis\cb\types\checkbox;
 
-use Ersaazis\CB\models\ColumnModel;
-use Ersaazis\CB\types\TypesHook;
+use ersaazis\cb\models\ColumnModel;
+use ersaazis\cb\types\TypesHook;
 
 class Hook extends TypesHook
 {
