@@ -187,7 +187,7 @@
                                 </tr>
                             </thead>
                             <?php
-                            $dirPath = base_path("vendor/crocodicstudio/crud/src/types");
+                            $dirPath = base_path("vendor/ersaazis/cb/src/types");
                             $types = scandir($dirPath);
                             ?>
                             <tbody>

@@ -11,7 +11,7 @@
         <div class="box-body" style="display: none">
 
             @foreach($columns as $column)
-                @if(file_exists(base_path('vendor/crocodicstudio/crud/src/types/'.$column->getType().'/filter.blade.php')))
+                @if(file_exists(base_path('vendor/ersaazis/cb/src/types/'.$column->getType().'/filter.blade.php')))
                 @php /* @var \ersaazis\cb\models\ColumnModel $column */ @endphp
                 <div class="form-group">
                     <label class="col-sm-2 control-label" for="">{{ $column->getLabel() }}</label>
