@@ -43,5 +43,5 @@ return [
      * You can define in this array what the tables you want to include in "php artisan crud:data_migration"
      * The default is all cb_ prefix will be include in data migration
      */
-    'ADDITIONAL_DATA_MIGRATION'=>['users','migrations']
+    'ADDITIONAL_DATA_MIGRATION'=>['users']
 ];
