@@ -4,4 +4,4 @@
 
 ``composer require ersaazis/cb "1.*"``
 
-``php artisan install"``
+``php artisan install``
