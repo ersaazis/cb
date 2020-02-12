@@ -22,7 +22,7 @@ class MigrateData extends Command
      *
      * @var string
      */
-    protected $description = 'CRUDBooster: Generate CB Data Seeder';
+    protected $description = 'CRUD: Generate CB Data Seeder';
 
     /**
      * Execute the console command.

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Session;
 trait DeveloperAuthController
 {
     public function getLoginDeveloper() {
-        return view('crudbooster::dev_layouts.login');
+        return view('crud::dev_layouts.login');
     }
 
     public function postLoginDeveloper() {

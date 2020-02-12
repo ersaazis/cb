@@ -5,7 +5,7 @@ namespace ersaazis\cb\middlewares;
 use App\Http\CBHook;
 use Closure;
 use ersaazis\cb\helpers\CB;
-use CRUDBooster;
+use CRUD;
 
 class CBBackend
 {

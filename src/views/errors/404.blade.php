@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{trans("cb::cb.page_not_found")}} : {{ cb()->getAppName() }}</title>
-    <meta name='generator' content='CRUDBooster'/>
+    <meta name='generator' content='CRUD'/>
     <meta name='robots' content='noindex,nofollow'/>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link href="{{cbAsset('adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css"/>

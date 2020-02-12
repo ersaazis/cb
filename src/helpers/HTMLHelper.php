@@ -26,7 +26,7 @@ class HTMLHelper
         $data['label'] = $label;
         $data['required'] = $required;
         $data['encrypt'] = isset($options['encrypt'])?$options['encrypt']:true;
-        return view("crudbooster::html_helper.file_uploader.index", $data);
+        return view("crud::html_helper.file_uploader.index", $data);
     }
 
     /**
@@ -45,7 +45,7 @@ class HTMLHelper
         $data['encrypt'] = isset($options['encrypt'])?$options['encrypt']:true;
         @$data['resizeWidth'] = $options['resize_width'];
         @$data['resizeHeight'] = $options['resize_height'];
-        return view("crudbooster::html_helper.image_uploader.index", $data);
+        return view("crud::html_helper.image_uploader.index", $data);
     }
 
 }

@@ -38,7 +38,7 @@ class CBController extends Controller
         $result = $query->paginate( request("limit")?:$this->data['limit'] );
         $data['result'] = $result;
 
-        return view("crudbooster::module.index.index", array_merge($data, $this->data));
+        return view("crud::module.index.index", array_merge($data, $this->data));
     }
 
     public function getAdd()
@@ -48,7 +48,7 @@ class CBController extends Controller
         $data = [];
         $data['page_title'] = $this->data['page_title'].' : '.cbLang('add');
         $data['action_url'] = module()->addSaveURL();
-        return view('crudbooster::module.form.form',array_merge($data, $this->data));
+        return view('crud::module.form.form',array_merge($data, $this->data));
     }
 
     public function postAddSave()
@@ -108,7 +108,7 @@ class CBController extends Controller
         $data['row'] = $this->repository()->where($this->data['table'].'.'.getPrimaryKey($this->data['table']), $id)->first();
         $data['page_title'] = $this->data['page_title'].' : '.cbLang('edit');
         $data['action_url'] = module()->editSaveURL($id);
-        return view('crudbooster::module.form.form', array_merge($data, $this->data));
+        return view('crud::module.form.form', array_merge($data, $this->data));
     }
 
     public function postEditSave($id)
@@ -194,7 +194,7 @@ class CBController extends Controller
         $data = [];
         $data['row'] = $this->repository()->where($this->data['table'].'.'.cb()->findPrimaryKey($this->data['table']), $id)->first();
         $data['page_title'] = $this->data['page_title'].' : '.cbLang('detail');
-        return view('crudbooster::module.form.form_detail', array_merge($data, $this->data));
+        return view('crud::module.form.form_detail', array_merge($data, $this->data));
     }
 
 

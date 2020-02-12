@@ -30,7 +30,7 @@ trait SubModuleController
             $data['additionalHeaderContent'] = $subModule['info'];
             $data['subModuleKey'] = $subModuleKey;
 
-            return view("crudbooster::module.index.index", array_merge($data, $this->data));
+            return view("crud::module.index.index", array_merge($data, $this->data));
         }
 
         return cb()->redirect(module()->url(),"It looks like your url is incorrect");

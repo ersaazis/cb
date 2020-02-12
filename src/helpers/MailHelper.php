@@ -44,7 +44,7 @@ class MailHelper
     }
 
     public function send() {
-        Mail::send("crudbooster::emails.blank", ['content' => $this->content], function ($message) {
+        Mail::send("crud::emails.blank", ['content' => $this->content], function ($message) {
             $message->priority(1);
             $message->to($this->to_email);
             $message->from($this->sender_email, $this->sender_name);

@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Hash;
 class DeveloperUsersController extends Controller
 {
 
-    private $view = "crudbooster::dev_layouts.modules.users";
+    private $view = "crud::dev_layouts.modules.users";
 
     public function __construct()
     {

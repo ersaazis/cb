@@ -25,10 +25,10 @@
 <div id='app' class="wrapper">
 
     <!-- Header -->
-    @include('crudbooster::themes.adminlte.layout.header')
+    @include('crud::themes.adminlte.layout.header')
 
     <!-- Sidebar -->
-    @include('crudbooster::themes.adminlte.layout.sidebar')
+    @include('crud::themes.adminlte.layout.sidebar')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -56,15 +56,15 @@
     </div><!-- /.content-wrapper -->
 
     <!-- Footer -->
-    @include('crudbooster::themes.adminlte.layout.footer')
+    @include('crud::themes.adminlte.layout.footer')
 
 </div><!-- ./wrapper -->
 
-@include('crudbooster::layouts.javascripts')
+@include('crud::layouts.javascripts')
 
 <!-- AdminLTE App -->
 <script src="{{ cbAsset('adminlte/dist/js/adminlte.min.js') }}" type="text/javascript"></script>
 
-@include('crudbooster::layouts.bottom')
+@include('crud::layouts.bottom')
 </body>
 </html>

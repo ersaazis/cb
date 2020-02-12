@@ -4,7 +4,7 @@ namespace ersaazis\cb\middlewares;
 
 use App\Http\Controllers\CBHook;
 use Closure;
-use CRUDBooster;
+use CRUD;
 
 class CBDeveloper
 {

@@ -40,7 +40,7 @@ return [
 
     /*
      * Data Migration table additional
-     * You can define in this array what the tables you want to include in "php artisan crudbooster:data_migration"
+     * You can define in this array what the tables you want to include in "php artisan crud:data_migration"
      * The default is all cb_ prefix will be include in data migration
      */
     'ADDITIONAL_DATA_MIGRATION'=>['users','migrations']

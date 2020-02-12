@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\DB;
 class DeveloperMenusController extends Controller
 {
 
-    private $view = "crudbooster::dev_layouts.modules.menus";
+    private $view = "crud::dev_layouts.modules.menus";
 
     public function __construct()
     {

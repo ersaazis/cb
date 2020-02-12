@@ -5,36 +5,36 @@
  */
 if(!function_exists("themeLoginBackground")) {
     function themeLoginBackground() {
-        return "crudbooster::layouts.login_background_css";
+        return "crud::layouts.login_background_css";
     }
 }
 if(!function_exists("themeFlashMessageAlert")) {
     function themeFlashMessageAlert() {
-        return "crudbooster::layouts.flash_message_alert";
+        return "crud::layouts.flash_message_alert";
     }
 }
 
 if(!function_exists("themeFlashMessage")) {
     function themeFlashMessage() {
-        return "crudbooster::layouts.flash_message";
+        return "crud::layouts.flash_message";
     }
 }
 
 if(!function_exists("themeAlertMessage")) {
     function themeAlertMessage() {
-        return "crudbooster::layouts.alert_message";
+        return "crud::layouts.alert_message";
     }
 }
 
 if(!function_exists("themeLayoutPageTitleAndButton")) {
     function themeLayoutPageTitleAndButton() {
-        return 'crudbooster::module.index.index_head_buttons';
+        return 'crud::module.index.index_head_buttons';
     }
 }
 
 if(!function_exists("themeLayoutHead")) {
     function themeLayoutHead() {
-        return "crudbooster::layouts.head";
+        return "crud::layouts.head";
     }
 }
 if(!function_exists("themeTitle")) {
@@ -46,7 +46,7 @@ if(!function_exists("themeTitle")) {
 
 if(!function_exists("getThemePath")) {
     function getThemePath($path = null) {
-        return getSetting("theme_path", "crudbooster::themes.adminlte").(($path)?".".$path:null);
+        return getSetting("theme_path", "crud::themes.adminlte").(($path)?".".$path:null);
     }
 }
 
@@ -310,7 +310,7 @@ if(!function_exists('cbAsset')) {
 
 if(!function_exists("cbConfig")) {
     function cbConfig($name, $default = null) {
-        return config("crudbooster.".$name, $default);
+        return config("crud.".$name, $default);
     }
 }
 

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 class DeveloperMailController extends Controller
 {
-    private $view = "crudbooster::dev_layouts.modules.mail";
+    private $view = "crud::dev_layouts.modules.mail";
 
     public function __construct()
     {

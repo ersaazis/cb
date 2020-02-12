@@ -21,7 +21,7 @@ use Symfony\Component\Process\Process;
 class DeveloperModulesController extends Controller
 {
 
-    private $view = "crudbooster::dev_layouts.modules.modules";
+    private $view = "crud::dev_layouts.modules.modules";
 
     public function __construct()
     {

@@ -42,7 +42,7 @@
         </div>
         <div class="box-body">
             <div class='table-responsive'>
-                @include("crudbooster::module.form.form_detail_table")
+                @include("crud::module.form.form_detail_table")
             </div>
         </div>
     </div>

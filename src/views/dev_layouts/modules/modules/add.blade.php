@@ -1,4 +1,4 @@
-@extends("crudbooster::dev_layouts.layout")
+@extends("crud::dev_layouts.layout")
 @section("content")
 
 
@@ -187,7 +187,7 @@
                                 </tr>
                             </thead>
                             <?php
-                            $dirPath = base_path("vendor/crocodicstudio/crudbooster/src/types");
+                            $dirPath = base_path("vendor/crocodicstudio/crud/src/types");
                             $types = scandir($dirPath);
                             ?>
                             <tbody>

@@ -1,14 +1,14 @@
-@extends("crudbooster::dev_layouts.layout")
+@extends("crud::dev_layouts.layout")
 @section("content")
 
 
     <div class="mt-40">
         <div style="text-align: center">
-            <img src="{{ cbAsset("images/logo_cb_blue.png") }}" alt="CRUDBooster">
+            <img src="{{ cbAsset("images/logo_cb_blue.png") }}" alt="CRUD">
             <div class="mt-20">
                 <p>
-                    <a target="_blank" href="http://crudbooster.com">Documentation</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
-                    <a target="_blank" href="https://github.com/crocodic-studio/crudbooster">GitHub</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a target="_blank" href="http://crud.com">Documentation</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a target="_blank" href="https://github.com/crocodic-studio/crud">GitHub</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
                     <a href="javascript:;" onclick='$("#modal-welcome").modal("show")'>Greeting</a>
                 </p>
             </div>
@@ -20,7 +20,7 @@
         <div class="modal-dialog modal-lg" style="width: 1000px">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" align="center"><i class="fa fa-star"></i> Welcome to CRUDBooster <i class="fa fa-star"></i></h4>
+                    <h4 class="modal-title" align="center"><i class="fa fa-star"></i> Welcome to CRUD <i class="fa fa-star"></i></h4>
                 </div>
                 <div class="modal-body">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -35,10 +35,10 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <div align="center">
-                                    <img width="850px" height="390px" src="{{ cbAsset("images/crudbooster_slider.png") }}" alt="">
+                                    <img width="850px" height="390px" src="{{ cbAsset("images/crud_slider.png") }}" alt="">
                                     <br><br>
                                     <p>
-                                        Thank you for choosing <strong>CRUDBooster</strong> :). Don't forget to share CRUDBooster on your Social Media and also tell to your friend.
+                                        Thank you for choosing <strong>CRUD</strong> :). Don't forget to share CRUD on your Social Media and also tell to your friend.
                                     </p>
                                 </div>
                             </div>

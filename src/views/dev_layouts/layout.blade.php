@@ -8,7 +8,7 @@
         <title>{{ cb()->getAppName() }}</title>
     @endif
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
-    <meta name='generator' content='CRUDBooster'/>
+    <meta name='generator' content='CRUD'/>
     <meta name='robots' content='noindex,nofollow'/>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
@@ -28,10 +28,10 @@
 <div id='app' class="wrapper">
 
     <!-- Header -->
-    @include('crudbooster::dev_layouts.header')
+    @include('crud::dev_layouts.header')
 
     <!-- Sidebar -->
-    @include('crudbooster::dev_layouts.sidebar')
+    @include('crud::dev_layouts.sidebar')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -62,11 +62,11 @@
     </div><!-- /.content-wrapper -->
 
     <!-- Footer -->
-    @include('crudbooster::dev_layouts.footer')
+    @include('crud::dev_layouts.footer')
 
 </div><!-- ./wrapper -->
 
-@include('crudbooster::layouts.javascripts')
+@include('crud::layouts.javascripts')
 
 @stack('bottom')
 

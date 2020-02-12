@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 class DeveloperMiscellaneousController extends Controller
 {
-    private $view = "crudbooster::dev_layouts.modules.miscellaneous";
+    private $view = "crud::dev_layouts.modules.miscellaneous";
 
     public function __construct()
     {

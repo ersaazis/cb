@@ -19,7 +19,7 @@ class FileController extends BaseController
         try {
 
             cb()->validation([
-                'userfile' => 'required|mimes:' . implode(",",config('crudbooster.UPLOAD_FILE_EXTENSION_ALLOWED'))
+                'userfile' => 'required|mimes:' . implode(",",config('crud.UPLOAD_FILE_EXTENSION_ALLOWED'))
             ]);
 
             $file = cb()->uploadFile('userfile', request("encrypt"));

@@ -1,4 +1,4 @@
-@extends("crudbooster::dev_layouts.layout")
+@extends("crud::dev_layouts.layout")
 @section("content")
 
     <p><a href="{{ route('DeveloperModulesControllerGetAdd') }}" class="btn btn-primary"><i class="fa fa-plus"></i> {{ cbLang('add') }} Module</a></p>

@@ -1,4 +1,4 @@
-@extends('crudbooster::themes.adminlte.layout.layout_login')
+@extends('crud::themes.adminlte.layout.layout_login')
 @section('content')
 
     @if(!getSetting("login_logo"))

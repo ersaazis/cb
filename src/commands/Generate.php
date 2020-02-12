@@ -21,7 +21,7 @@ class Generate extends Command
      *
      * @var string
      */
-    protected $description = 'CRUDBooster Make a Module';
+    protected $description = 'CRUD Make a Module';
 
     /**
      * Execute the console command.

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 class DeveloperRolesController extends Controller
 {
-    private $view = "crudbooster::dev_layouts.modules.roles";
+    private $view = "crud::dev_layouts.modules.roles";
 
     public function __construct()
     {

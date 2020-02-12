@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 
 class DeveloperThemesController extends Controller
 {
-    private $view = "crudbooster::dev_layouts.modules.themes";
+    private $view = "crud::dev_layouts.modules.themes";
 
     public function __construct()
     {

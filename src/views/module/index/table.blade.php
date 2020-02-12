@@ -45,7 +45,7 @@
             @if($position = getSetting("table_module_action_button_position"))
                 @if($position == "left")
                     <td style="text-align: center; white-space: nowrap">
-                        @include("crudbooster::module.index.table_action_buttons")
+                        @include("crud::module.index.table_action_buttons")
                     </td>
                 @endif
             @endif
@@ -63,7 +63,7 @@
             @if($position = getSetting("table_module_action_button_position","right"))
                 @if($position == "right")
                     <td style="text-align: center; white-space: nowrap">
-                        @include("crudbooster::module.index.table_action_buttons")
+                        @include("crud::module.index.table_action_buttons")
                     </td>
                 @endif
             @endif

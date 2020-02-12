@@ -34,7 +34,7 @@
     @endif
 
     <!-- Filter Component -->
-    @include("crudbooster::module.index.filters")
+    @include("crud::module.index.filters")
     <!-- End Filter Component-->
 
     <div class="box">
@@ -79,7 +79,7 @@
 
         </div>
         <div class="box-body table-responsive">
-            @include("crudbooster::module.index.table")
+            @include("crud::module.index.table")
 
             <div class="col-md-8">{!! $result->appends(requestAll())->links() !!}</div>
 

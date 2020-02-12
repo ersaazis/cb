@@ -1,6 +1,6 @@
 <!-- Default Meta-->
 <meta name="csrf-token" content="{{ csrf_token() }}"/>
-<meta name='generator' content='CRUDBooster'/>
+<meta name='generator' content='CRUD'/>
 <meta name='robots' content='noindex,nofollow'/>
 
 <!-- Default CB Stylesheet-->

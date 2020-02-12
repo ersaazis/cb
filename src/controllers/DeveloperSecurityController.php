@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 class DeveloperSecurityController extends Controller
 {
-    private $view = "crudbooster::dev_layouts.modules.security";
+    private $view = "crud::dev_layouts.modules.security";
 
     public function __construct()
     {

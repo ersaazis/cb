@@ -1,4 +1,4 @@
-@extends('crudbooster::themes.adminlte.layout.layout')
+@extends('crud::themes.adminlte.layout.layout')
 @section('content')
 
 

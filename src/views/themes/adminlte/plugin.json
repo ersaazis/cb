@@ -8,6 +8,6 @@
   "author_homepage": "http://adminlte.io",
   "asset": "Asset",
   "type": "theme",
-  "theme_path": "crudbooster::themes.adminlte",
+  "theme_path": "crud::themes.adminlte",
   "thumbnail": "cb_asset/images/themes/adminlte.jpg"
 }

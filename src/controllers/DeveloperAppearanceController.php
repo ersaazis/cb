@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 
 class DeveloperAppearanceController extends Controller
 {
-    private $view = "crudbooster::dev_layouts.modules.appearance";
+    private $view = "crud::dev_layouts.modules.appearance";
 
     public function __construct()
     {

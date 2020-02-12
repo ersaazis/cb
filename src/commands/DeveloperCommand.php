@@ -21,7 +21,7 @@ class DeveloperCommand extends Command
      *
      * @var string
      */
-    protected $description = 'CRUDBooster Generate Developer User';
+    protected $description = 'CRUD Generate Developer User';
 
     /**
      * Execute the console command.

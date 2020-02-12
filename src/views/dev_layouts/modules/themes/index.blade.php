@@ -1,4 +1,4 @@
-@extends("crudbooster::dev_layouts.layout")
+@extends("crud::dev_layouts.layout")
 @section("content")
 
     <div class="row">

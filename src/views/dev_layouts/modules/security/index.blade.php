@@ -1,4 +1,4 @@
-@extends("crudbooster::dev_layouts.layout")
+@extends("crud::dev_layouts.layout")
 @section("content")
     @push('head')
         <link rel="stylesheet" href="{{ cbAsset("adminlte/bower_components/bootstrap-toggle/bootstrap-toggle.min.css") }}">
