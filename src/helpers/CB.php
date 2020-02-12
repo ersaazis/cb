@@ -70,7 +70,7 @@ class CB
     }
 
     public function getAppName() {
-        return getSetting("APP_NAME", env("APP_NAME","CRUDBOOSTER"));
+        return getSetting("APP_NAME", env("APP_NAME","CRUD"));
     }
 
     /**

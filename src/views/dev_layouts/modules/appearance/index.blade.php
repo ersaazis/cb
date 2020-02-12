@@ -18,7 +18,7 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="">Application Name</label>
-                                <input type="text" required name="APP_NAME" value="{{ getSetting("APP_NAME","CRUDBOOSTER")}}" class="form-control">
+                                <input type="text" required name="APP_NAME" value="{{ getSetting("APP_NAME","CRUD")}}" class="form-control">
                             </div>
 
                             <div class="form-group">
