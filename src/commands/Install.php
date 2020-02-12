@@ -43,7 +43,9 @@ class Install extends Command
             if (! file_exists(public_path('vendor')) ) {
                 mkdir(public_path('vendor'));
             }
-
+            if (! file_exists(storage_path("themes")) ) {
+                mkdir(storage_path("themes"));
+            }
             $this->info('Please wait CB publish assets...');
             $this->call('vendor:publish', ['--tag' => 'cb_config']);
             $this->call('vendor:publish', ['--tag' => 'cb_hook']);
