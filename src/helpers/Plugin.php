@@ -27,7 +27,7 @@ class Plugin
 
     public function getAll($path = null)
     {
-        $path = ($path)?:app_path("CBPlugins");
+        $path = ($path)?:storage_path("themes");
         $plugins = scandir($path);
 
         $result = [];
