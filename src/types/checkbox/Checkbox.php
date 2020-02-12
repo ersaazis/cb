@@ -8,7 +8,6 @@
 
 namespace Ersaazis\CB\types;
 
-use Crocodicstudio\Cbmodel\Core\Model;
 use Ersaazis\CB\controllers\scaffolding\traits\DefaultOption;
 use Ersaazis\CB\controllers\scaffolding\traits\Join;
 use Ersaazis\CB\types\checkbox\CheckboxModel;
