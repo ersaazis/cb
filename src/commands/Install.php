@@ -96,15 +96,6 @@ class Install extends Command
 
     private function header()
     {
-        $this->info("
-#     __________  __  ______  ____                   __           
-#    / ____/ __ \/ / / / __ \/ __ )____  ____  _____/ /____  _____
-#   / /   / /_/ / / / / / / / __  / __ \/ __ \/ ___/ __/ _ \/ ___/
-#  / /___/ _, _/ /_/ / /_/ / /_/ / /_/ / /_/ (__  ) /_/  __/ /    
-#  \____/_/ |_|\____/_____/_____/\____/\____/____/\__/\___/_/     
-#                                                                                                                       
-			");
-        $this->info('--------- :===: Thanks for choosing CRUDBooster :==: ---------------');
         $this->info('====================================================================');
     }
 
@@ -198,9 +189,6 @@ class Install extends Command
 
         (new DeveloperCommandService($this))->create();
 
-        $this->info("--");
-        $this->info('Homepage : http://crudbooster.com');
-        $this->info('Github : https://github.com/crocodic-studio/crudbooster');
         $this->info('====================================================================');
         if ($success == true) {
             $this->info('------------------- :===: Completed !! :===: ------------------------');

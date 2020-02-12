@@ -32,6 +32,7 @@ class ErsaCBPackageServiceProvider extends ServiceProvider
         $this->publishes([__DIR__.'/database' => base_path('database')],'cb_migration');
         $this->publishes([__DIR__.'/templates/CBHook.stub'=> app_path('Http/CBHook.php')],'cb_hook');
         $this->publishes([__DIR__ . '/assets' =>public_path('cb_asset')],'cb_asset');
+        $this->publishes([__DIR__ . '/install.sh' =>app_path('install.sh')],'');
 
         // Override Local FileSystem
         Config::set("filesystems.disks.local.root", cbConfig("LOCAL_FILESYSTEM_PATH", public_path("storage")));
