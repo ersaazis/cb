@@ -4,15 +4,15 @@
 Route::group(['middleware' => ['web',\ersaazis\cb\middlewares\CBDeveloper::class],
     'prefix'=>"developer/".getSetting('developer_path'),
     'namespace' => 'ersaazis\cb\controllers'], function () {
-    cb()->routeController("modules", "\ersaazis\cb\controllers\DeveloperModulesController");
-    cb()->routeController("menus", "\ersaazis\cb\controllers\DeveloperMenusController");
-    cb()->routeController("roles","\ersaazis\cb\controllers\DeveloperRolesController");
-    cb()->routeController("users","\ersaazis\cb\controllers\DeveloperUsersController");
-    cb()->routeController("mail","\ersaazis\cb\controllers\DeveloperMailController");
-    cb()->routeController("security","\ersaazis\cb\controllers\DeveloperSecurityController");
-    cb()->routeController("themes","\ersaazis\cb\controllers\DeveloperThemesController");
-    cb()->routeController("appearance","\ersaazis\cb\controllers\DeveloperAppearanceController");
-    cb()->routeController("miscellaneous","\ersaazis\cb\controllers\DeveloperMiscellaneousController");
+    cb()->routeController("modules", '\ersaazis\cb\controllers\DeveloperModulesController');
+    cb()->routeController("menus", '\ersaazis\cb\controllers\DeveloperMenusController');
+    cb()->routeController("roles",'\ersaazis\cb\controllers\DeveloperRolesController');
+    cb()->routeController("users",'\ersaazis\cb\controllers\DeveloperUsersController');
+    cb()->routeController("mail",'\ersaazis\cb\controllers\DeveloperMailController');
+    cb()->routeController("security",'\ersaazis\cb\controllers\DeveloperSecurityController');
+    cb()->routeController("themes",'\ersaazis\cb\controllers\DeveloperThemesController');
+    cb()->routeController("appearance",'\ersaazis\cb\controllers\DeveloperAppearanceController');
+    cb()->routeController("miscellaneous",'\ersaazis\cb\controllers\DeveloperMiscellaneousController');
     cb()->routePost("skip-tutorial","DeveloperDashboardController@postSkipTutorial");
     cb()->routeGet("/","DeveloperDashboardController@getIndex");
 });
@@ -69,7 +69,7 @@ Route::group([
         if($dashboard = getSetting("dashboard_controller")) {
             cb()->routeGet("/", $dashboard."@getIndex");
         }else{
-            cb()->routeGet("/", "\ersaazis\cb\controllers\AdminDashboardController@getIndex");
+            cb()->routeGet("/", '\ersaazis\cb\controllers\AdminDashboardController@getIndex');
         }
     }
 
