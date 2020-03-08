@@ -130,7 +130,7 @@ class AdminAuthController extends CBController
             ]);
 
             $credential = request()->only(['email','password']);
-            if (auth()->attempt($credential)) {
+            if (auth()->attempt($credential,true)) {
 
                 // Check if login notification is enabled
                 if($this->loginNotification()) {

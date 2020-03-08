@@ -18,6 +18,7 @@ class SidebarModel
     private $sub;
     private $sub_active;
     private $icon;
+    private $editable;
     private $basepath;
     private $is_active;
 
@@ -173,6 +174,22 @@ class SidebarModel
     public function setIcon($icon): void
     {
         $this->icon = $icon;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEditable()
+    {
+        return $this->editable;
+    }
+
+    /**
+     * @param mixed $editable
+     */
+    public function setEditable($editable): void
+    {
+        $this->editable = $editable;
     }
 
 

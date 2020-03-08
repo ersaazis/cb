@@ -39,6 +39,7 @@ class SidebarMenus
             $model->setName($menu->name);
             $model->setBasepath(config('crud.ADMIN_PATH').'/'.basename($model->getUrl()));
         }
+        $model->setEditable($menu->editable);
 
         if(request()->is($model->getBasepath()."*")) {
             $model->setIsActive(true);
