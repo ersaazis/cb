@@ -30,7 +30,7 @@
         </style>
     @endif
 </head>
-<body class="hold-transition {{getSetting("adminlte_theme_skin","skin-green")}} sidebar-mini">
+<body class="hold-transition {{getSetting("adminlte_theme_skin","skin-blue")}} sidebar-mini">
 <div class="loader bg-primary">
     <div class="center">
         <i class="fa fa-refresh fa-spin"></i>

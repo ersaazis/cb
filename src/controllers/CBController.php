@@ -37,7 +37,6 @@ class CBController extends Controller
         $query = $this->repository();
         $result = $query->paginate( request("limit")?:$this->data['limit'] );
         $data['result'] = $result;
-
         return view("crud::module.index.index", array_merge($data, $this->data));
     }
 
