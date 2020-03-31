@@ -36,7 +36,8 @@ trait RegisterController
             if($user = cb()->find("users",["email"=>request("email")])) {
                 return cb()->redirectBack("The email you input has already exists!");
             }
-
+            $token = Str::random(6);
+            $linkToken = cb()->getAdminUrl("continue-register/".$token);
             if(getSetting("register_mail_verification")) {
                 Cache::put("register_".$token,[
                     "name"=>request("name"),
