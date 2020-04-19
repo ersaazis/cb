@@ -30,11 +30,11 @@ trait RegisterController
             ]);
 
             if(Session::get("captcha_result") != request("captcha")) {
-                return cb()->redirectBack("The captcha that you input is wrong!");
+                return cb()->redirectBack("Captcha yang Anda masukkan salah!");
             }
 
             if($user = cb()->find("users",["email"=>request("email")])) {
-                return cb()->redirectBack("The email you input has already exists!");
+                return cb()->redirectBack("Email yang Anda input sudah terdaftar!");
             }
             $token = Str::random(6);
             $linkToken = cb()->getAdminUrl("continue-register/".$token);
@@ -48,12 +48,13 @@ trait RegisterController
                 $mail = new MailHelper();
                 $mail->to(request("email"));
                 $mail->sender(getSetting("register_mail_verification_sender","noreply@".$_SERVER['SERVER_NAME']),cb()->getAppName());
-                $mail->content("Verify Your Registration","
-                Hi ".request("name")."<br/>
-                Thank you for register at ".cb()->getAppName()." to continue your registration, please click on the following link: <br/>
+                $mail->subject("Verifikasi Email Anda");
+                $mail->content("
+                Hai ".request("name")."<br/>
+                Terimakasih telah mendaftar di ".cb()->getAppName()." untuk melanjutkan pendaftaran, silakan klik link dibawah ini: <br/>
                 <p>$linkToken</p>
                 <br>
-                Thank You <br>
+                Terimakasih <br>
                 ".cb()->getAppName()."
                 ");
                 $mail->send();
@@ -67,14 +68,14 @@ trait RegisterController
                         "cb_roles_id"=> getSetting("register_as_role")
                     ]);
 
-                return cb()->redirect(cb()->getAdminUrl("login"),"Thank you for register. Now you can login to start your session :)","success");
+                return cb()->redirect(cb()->getAdminUrl("login"),"Terima kasih sudah mendaftar. Sekarang Anda dapat login =)","success");
             }
 
         }catch (CBValidationException $e) {
             return cb()->redirectBack($e->getMessage());
         }
 
-        return cb()->redirectBack("We've sent you an confirmation email. Please click the link inside the email","success");
+        return cb()->redirectBack("Kami telah mengirimi Anda email konfirmasi. Silakan klik link di dalam email","success");
     }
 
     public function postContinueRegister($token) {
@@ -88,9 +89,9 @@ trait RegisterController
                     "cb_roles_id"=> getSetting("register_as_role")
                 ]);
 
-            return cb()->redirect(cb()->getAdminUrl("login"),"Thank you for register. Now you can login to start your session :)","success");
+            return cb()->redirect(cb()->getAdminUrl("login"),"Terima kasih sudah mendaftar. Sekarang Anda dapat login =)","success");
         } else {
-            return cb()->redirect(cb()->getAdminUrl("login"),"It looks like the URL has been expired!");
+            return cb()->redirect(cb()->getAdminUrl("login"),"Sepertinya URL telah kedaluwarsa!");
         }
     }
 

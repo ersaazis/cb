@@ -46,10 +46,12 @@ Route::group(['middleware' => ['web'], 'prefix' => cb()->getAdminPath(), 'namesp
 
     if(getSetting("enable_forget")) {
         cb()->routePost("forget","AdminAuthController@postForget");
+        cb()->routeGet("continue-reset/{token}","AdminAuthController@getContinueReset");
     }
 
     if(getSetting("enable_register")) {
         cb()->routePost("register","AdminAuthController@postRegister");
+        cb()->routeGet("continue-register/{token}","AdminAuthController@postContinueRegister");
     }
 });
 

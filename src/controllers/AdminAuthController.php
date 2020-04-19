@@ -152,7 +152,7 @@ class AdminAuthController extends CBController
                 return redirect(cb()->getAdminUrl());
             } else {
                 $this->incrementFailedLogin();
-                return redirect(cb()->getLoginUrl())->with(['message'=>cbLang('password_and_username_is_wrong'),'message_type'=>'warning']);
+                return redirect(cb()->getLoginUrl())->with(['message'=>cbLang('password_and_username_is_wrong').", Pastikan Email anda telah diverifikasi.",'message_type'=>'warning']);
             }
         }catch (CBValidationException $e) {
             return cb()->redirect(cb()->getAdminUrl("login"),$e->getMessage(),'warning');

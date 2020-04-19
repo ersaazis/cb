@@ -13,12 +13,12 @@
         {!! csrf_field() !!}
         <div class="form-group has-feedback">
             <label for="">Email</label>
-            <input autocomplete='off' type="email" class="form-control" name='email' required placeholder="Enter your email here"/>
+            <input autocomplete='off' type="email" class="form-control" name='email' required placeholder="Masukan Email"/>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
         </div>
         <div class="form-group has-feedback">
             <label for="">Password</label>
-            <input autocomplete='off' type="password" class="form-control" name='password' required placeholder="Enter your password here"/>
+            <input autocomplete='off' type="password" class="form-control" name='password' required placeholder="Msukan Password"/>
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
         </div>
         <div style="margin-bottom:10px" class='row'>
@@ -29,14 +29,14 @@
                 <div class="row">
                     @if(getSetting("enable_register"))
                         <div class="col-sm-6">
-                            <div align="left"><a style="text-decoration: underline" href="javascript:;" onclick="showRegister()">Don't have an account?</a></div>
+                            <div align="left"><a style="text-decoration: underline" href="javascript:;" onclick="showRegister()">Tidak memiliki akun?</a></div>
                         </div>
                     @endif
 
                     @if(getSetting("enable_forget"))
                     <div class="col-sm-6">
                         <div align="right">
-                            <a href="javascript:;" onclick="showForget()" style="text-decoration: underline">Lost your password?</a>
+                            <a href="javascript:;" onclick="showForget()" style="text-decoration: underline">Lupa Password?</a>
                         </div>
                     </div>
                     @endif
@@ -51,16 +51,16 @@
         {!! csrf_field() !!}
         <div class="form-group has-feedback">
             <label for="">Email</label>
-            <input autocomplete='off' type="email" class="form-control" name='email' required placeholder="Enter your registered email here"/>
+            <input autocomplete='off' type="email" class="form-control" name='email' required placeholder="Masukkan email Anda yang terdaftar di sini"/>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
-            <div class="help-block">Please make sure that your email is registered on our system</div>
+            <div class="help-block">Pastikan email Anda terdaftar di sistem kami</div>
         </div>
         <div style="margin-bottom:10px" class='row'>
             <div class='col-xs-12'>
                 <button type="submit" class="btn btn-primary btn-block btn-flat">{{ cbLang("submit") }}</button>
                 <p></p>
                 <p>
-                    <a href="javascript:;" onclick="showLogin()" style="text-decoration: underline">&laquo; Back to Login</a>
+                    <a href="javascript:;" onclick="showLogin()" style="text-decoration: underline">&laquo; Login</a>
                 </p>
             </div>
         </div>
@@ -71,7 +71,7 @@
         <form id="form-register" style="display: none;" autocomplete='off' action="{{ route('AdminAuthControllerPostRegister') }}" method="post">
             {!! csrf_field() !!}
             <div class="form-group has-feedback">
-                <label for="">Name</label>
+                <label for="">Nama</label>
                 <input autocomplete='off' type="text" class="form-control" name='name' required />
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
             </div>
@@ -84,23 +84,23 @@
 
             <div class="form-group has-feedback">
                 <label for="">Password</label>
-                <input autocomplete='off' type="password" class="form-control" name='password' required placeholder="Enter your password here"/>
+                <input autocomplete='off' type="password" class="form-control" name='password' required placeholder="Masukkan Password Disini"/>
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
 
             <div class="form-group has-feedback">
                 <label for="">Captcha</label>
-                <p>What is the sum of {{ $no1 }} and {{ $no2 }}</p>
-                <input autocomplete='off' type="text" placeholder="Enter the value here" class="form-control" name='captcha' required />
+                <p>Berapa Hasil Penumlahan Dari {{ $no1 }} dan {{ $no2 }}</p>
+                <input autocomplete='off' type="text" placeholder="Masukkan Hasilnya Disini" class="form-control" name='captcha' required />
 
-                <div class="help-block">Please complete this challenge</div>
+                <div class="help-block">Isi Penjumlahan Diatas</div>
             </div>
             <div style="margin-bottom:10px" class='row'>
                 <div class='col-xs-12'>
                     <button type="submit" class="btn btn-success btn-block btn-flat">{{ cbLang("register") }}</button>
                     <p></p>
                     <p>
-                        <a href="javascript:;" onclick="showLogin()" style="text-decoration: underline">&laquo; Back to Login</a>
+                        <a href="javascript:;" onclick="showLogin()" style="text-decoration: underline">&laquo; Login</a>
                     </p>
                 </div>
             </div>

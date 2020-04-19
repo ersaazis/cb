@@ -302,10 +302,9 @@ trait ControllerSetting
      * @param string $alert_message
      * @return ControllerSetting
      */
-    public function setAlertMessage($alert_message,$alert_message_type)
+    public function setAlertMessage($alert_message)
     {
         $this->data['alert_message'] = $alert_message;
-        $this->data['alert_message_type'] = $alert_message_type;
         return $this;
     }
 

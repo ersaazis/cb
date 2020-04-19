@@ -38,24 +38,25 @@ trait ForgetController
                 $mail = new MailHelper();
                 $mail->to($user->email);
                 $mail->sender(getSetting("forget_email_sender","noreply@".$_SERVER['SERVER_NAME']),cb()->getAppName());
-                $mail->content("Please Confirm Your Forgot Password","
-                    Hi $user->name,<br/><br>
-                    Someone with the detail bellow: <br/>
-                    Time = ".now()->format("Y-m-d H:i:s")."<br/>
+                $mail->subject("Silakan Konfirmasi Lupa Password");
+                $mail->content("
+                    Hai $user->name,<br/><br>
+                    Seseorang Dengan Detail: <br/>
+                    Wantu = ".now()->format("Y-m-d H:i:s")."<br/>
                     IP Address = ".request()->ip()."<br/>
                     Browser = ".request()->userAgent()."<br/>
                     <p>
-                        Trying to reset your password. If this is you, please click the following url to continue: <br>
+                        Telah mencoba mereset password. Jika itu kamu, silakan klik url dibawah ini: <br>
                         <a href='$linkToken' target='_blank'>$linkToken</a>
                     </p>
                     <br><br>
-                    Thank you <br/>
+                    Terimakasih <br/>
                     ".cb()->getAppName()."
                 ");
                 $mail->send();
 
             } else {
-                return cb()->redirectBack("Your email is not registered");
+                return cb()->redirectBack("Email yang anda masukan tidak tersedia");
             }
 
         }catch (CBValidationException $e) {
@@ -65,7 +66,7 @@ trait ForgetController
             return cb()->redirectBack(cbLang("something_went_wrong"));
         }
 
-        return cb()->redirectBack("We've sent you an email instruction. Please follow the instruction inside the email","success");
+        return cb()->redirectBack("Kami telah mengirimkan instruksi melaui email anda. Silakan ikuti instruksi di dalam email","success");
     }
 
     public function getContinueReset($token) {
@@ -79,20 +80,21 @@ trait ForgetController
             $mail = new MailHelper();
             $mail->to($user->email);
             $mail->sender(getSetting("forget_email_sender","noreply@".$_SERVER['SERVER_NAME']),cb()->getAppName());
-            $mail->content("This Is Your New Password","
-                    Hi $user->name,<br/><br>
-                    Thank you for confirming the request new password. Here is your new password: <br>
-                    <h2>$newPassword</h2>
-                    
-                    <br><br>
-                    Thank you <br/>
-                    ".cb()->getAppName()."
-                ");
+            $mail->subject("Ini Password Baru Anda");
+            $mail->content("
+                Hai $user->name,<br/><br>
+                Reset password telah berhasil. Ini password baru Anda: <br>
+                <h2>$newPassword</h2>
+                
+                <br><br>
+                Terimakasih <br/>
+                ".cb()->getAppName()."
+            ");
             $mail->send();
 
-            return cb()->redirect(cb()->getAdminUrl("login"),"We've sent you new password email. Please check at your mail inbox or spambox","success");
+            return cb()->redirect(cb()->getAdminUrl("login"),"Kami telah mengirim password baru melaui email anda. Silakan periksa di inbox Anda atau spambox","success");
         } else {
-            return cb()->redirect(cb()->getAdminUrl("login"),"It looks like the url has been expired!");
+            return cb()->redirect(cb()->getAdminUrl("login"),"Sepertinya url telah kedaluwarsa!");
         }
     }
 
