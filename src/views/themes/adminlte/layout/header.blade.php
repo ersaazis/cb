@@ -16,7 +16,27 @@
         <!-- Navbar Right Menu -->
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-
+                <li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                        <i class="fa fa-bell-o"></i>
+                        <span class="label label-danger">{{ cb()->session()->countNotifications() }}</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">Kamu memiliki {{ cb()->session()->countNotifications() }} notifikasi</li>
+                        <li>
+                        @foreach (cb()->session()->notifications() as $item)
+                        <ul class="menu">
+                            <li>
+                                <a href="{{ cb()->getAdminUrl("notification/go/".$item->id) }}">
+                                    <i class="fa fa-bell-o text-red"></i> {{$item->content}}
+                                </a>
+                            </li>
+                        </ul>                            
+                        @endforeach
+                        </li>
+                        <li class="footer"><a href="{{ cb()->getAdminUrl("notification") }}">lihat semua</a></li>
+                    </ul>
+                </li>
                 <!-- User Account Menu -->
                 <li class="dropdown user user-menu">
                     <!-- Menu Toggle Button -->

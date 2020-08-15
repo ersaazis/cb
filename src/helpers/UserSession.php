@@ -37,4 +37,15 @@ class UserSession  {
         return $this->user()->cb_roles_id;
     }
 
+    public function notifications($status = 0)
+    {
+        $notif = cb()->findAll("cb_notifications",['users_id'=>auth()->id(),'is_read'=>$status]);
+        if($notif) return $notif;
+        else return null;
+    }
+
+    public function countNotifications()
+    {
+        return count($this->notifications());
+    }
 }

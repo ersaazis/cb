@@ -19,8 +19,9 @@ class TableMenus extends Migration
             $table->string("path")->nullable();
             $table->string("type");
             $table->integer("sort_number")->default(0);
-            $table->integer("cb_modules_id")->nullable();
+            $table->unsignedInteger("cb_modules_id")->nullable();
             $table->integer("parent_cb_menus_id")->nullable();
+            $table->foreign('cb_modules_id')->references('id')->on('cb_modules')->onDelete('cascade');
         });
     }
 

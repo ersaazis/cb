@@ -58,6 +58,10 @@ Route::group(['middleware' => ['web'], 'prefix' => cb()->getAdminPath(), 'namesp
 // Routing package controllers
 cb()->routeGroupBackend(function () {
     cb()->routeController('profile', '\ersaazis\cb\controllers\AdminProfileController');
+    cb()->routeGet("notification/go/{id}","AdminNotificationsController@getRedirectNotification");
+    cb()->routeGet("notification","AdminNotificationsController@getNotification");
+    cb()->routeGet("notification/read","AdminNotificationsController@getReadAllNotification");
+    cb()->routeGet("notification/delete","AdminNotificationsController@getDeleteNotification");
 });
 
 // Auto Routing for App\Http\Controllers
