@@ -69,6 +69,10 @@ class CB
         return url($this->getAdminPath()).$path;
     }
 
+    public function addNotification($data) {
+        DB::table('cb_notifications')->insert($data);
+    }
+
     public function getAppName() {
         return getSetting("APP_NAME", env("APP_NAME","CRUD"));
     }
