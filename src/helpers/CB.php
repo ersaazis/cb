@@ -86,7 +86,7 @@ class CB
      * @return string
      * @throws \Exception
      */
-    private function uploadFileProcess($filename, $extension, $file, $encrypt = true, $resize_width = null, $resize_height = null)
+    public function uploadFileProcess($filename, $extension, $file, $encrypt = true, $resize_width = null, $resize_height = null)
     {
         if(in_array($extension,cbConfig("UPLOAD_FILE_EXTENSION_ALLOWED"))) {
             $file_path = cbConfig("UPLOAD_PATH_FORMAT");

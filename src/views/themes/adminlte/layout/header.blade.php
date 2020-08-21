@@ -24,6 +24,9 @@
                     <ul class="dropdown-menu">
                         <li class="header">Kamu memiliki {{ cb()->session()->countNotifications() }} notifikasi</li>
                         <li>
+                        @php
+                            $x=1;
+                        @endphp
                         @foreach (cb()->session()->notifications() as $item)
                         <ul class="menu">
                             <li>
@@ -32,6 +35,10 @@
                                 </a>
                             </li>
                         </ul>                            
+                        @php
+                            if($x++ >= 5)
+                                break;
+                        @endphp
                         @endforeach
                         </li>
                         <li class="footer"><a href="{{ cb()->getAdminUrl("notification") }}">lihat semua</a></li>

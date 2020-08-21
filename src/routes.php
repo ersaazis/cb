@@ -34,7 +34,7 @@ Route::group(['middleware' => ['web'], 'namespace' => '\ersaazis\cb\controllers'
 });
 
 // Routing without any middleware with admin prefix
-Route::group(['middleware' => ['web'], 'prefix' => cb()->getAdminPath(), 'namespace' => 'ersaazis\cb\controllers'], function () {
+Route::group(['middleware' => ['web'], 'prefix' => cb()->getAdminPath(), 'namespace' => 'App\Http\Controllers\Crud'], function () {
     cb()->routeGet('logout', "AdminAuthController@getLogout");
 
     if(!getSetting("DISABLE_LOGIN")) {
@@ -57,11 +57,11 @@ Route::group(['middleware' => ['web'], 'prefix' => cb()->getAdminPath(), 'namesp
 
 // Routing package controllers
 cb()->routeGroupBackend(function () {
-    cb()->routeController('profile', '\ersaazis\cb\controllers\AdminProfileController');
-    cb()->routeGet("notification/go/{id}","AdminNotificationsController@getRedirectNotification");
-    cb()->routeGet("notification","AdminNotificationsController@getNotification");
-    cb()->routeGet("notification/read","AdminNotificationsController@getReadAllNotification");
-    cb()->routeGet("notification/delete","AdminNotificationsController@getDeleteNotification");
+    cb()->routeController('profile', '\App\Http\Controllers\Crud\AdminProfileController');
+    cb()->routeGet("notification/go/{id}",'\App\Http\Controllers\Crud\AdminNotificationsController@getRedirectNotification');
+    cb()->routeGet("notification",'\App\Http\Controllers\Crud\AdminNotificationsController@getNotification');
+    cb()->routeGet("notification/read",'\App\Http\Controllers\Crud\AdminNotificationsController@getReadAllNotification');
+    cb()->routeGet("notification/delete",'\App\Http\Controllers\Crud\AdminNotificationsController@getDeleteNotification');
 });
 
 // Auto Routing for App\Http\Controllers

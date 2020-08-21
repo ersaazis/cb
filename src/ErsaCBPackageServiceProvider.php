@@ -29,10 +29,11 @@ class ErsaCBPackageServiceProvider extends ServiceProvider
 
         // Publish the files
         $this->publishes([__DIR__.'/configs/crud.php' => config_path('crud.php')],'cb_config');
+        $this->publishes([__DIR__.'/controller_extends' => base_path('app/Http/Controllers/Crud')],'cb_controller');
         $this->publishes([__DIR__.'/database' => base_path('database')],'cb_migration');
         $this->publishes([__DIR__.'/templates/CBHook.stub'=> app_path('Http/CBHook.php')],'cb_hook');
-        $this->publishes([__DIR__ . '/assets' =>public_path('cb_asset')],'cb_asset');
-        $this->publishes([__DIR__ . '/rebuild.stub' =>base_path('rebuild.sh')],'cb_rebuild');
+        $this->publishes([__DIR__ .'/assets' =>public_path('cb_asset')],'cb_asset');
+        $this->publishes([__DIR__ .'/rebuild.stub' =>base_path('rebuild.sh')],'cb_rebuild');
 
         // Override Local FileSystem
         Config::set("filesystems.disks.local.root", cbConfig("LOCAL_FILESYSTEM_PATH", public_path("storage")));

@@ -55,11 +55,11 @@ class CurlHelper
         $this->headers = $newHeaders;
     }
 
-    public function data(array $data) {
+    public function data($data) {
         $this->data = $data;
     }
 
-    public function send() {
+    public function send($ssl=1) {
         $ch = curl_init($this->url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $this->type);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
@@ -70,6 +70,10 @@ class CurlHelper
         curl_setopt($ch, CURLOPT_HTTPHEADER, $this->headers);
         curl_setopt($ch,CURLOPT_USERAGENT,$this->user_agent);
         curl_setopt($ch, CURLOPT_REFERER, $this->referer);
+        if($ssl == 0){
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        }
         if($this->cookie === true) {
             $cookie_dir = storage_path("cookies");
             if(!file_exists($cookie_dir)) mkdir($cookie_dir);

@@ -22,6 +22,12 @@ class SidebarMenus
             $model->setIcon($menu->icon);
             $model->setName($menu->name);
             $model->setBasepath(basename($model->getUrl()));
+        }
+        else if($menu->type == "empty") {
+            $model->setUrl($menu->path);
+            $model->setIcon($menu->icon);
+            $model->setName($menu->name);
+            $model->setBasepath(basename($model->getUrl()));
         }elseif ($menu->type == "module") {
             $module = cb()->find("cb_modules", $menu->cb_modules_id);
             $className = '\App\Http\Controllers\\'.$module->controller;
