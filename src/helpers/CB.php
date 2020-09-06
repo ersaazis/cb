@@ -86,9 +86,9 @@ class CB
      * @return string
      * @throws \Exception
      */
-    public function uploadFileProcess($filename, $extension, $file, $encrypt = true, $resize_width = null, $resize_height = null)
+    public function uploadFileProcess($filename, $extension, $file, $encrypt = true, $resize_width = null, $resize_height = null,$config ="UPLOAD_FILE_EXTENSION_ALLOWED")
     {
-        if(in_array($extension,cbConfig("UPLOAD_FILE_EXTENSION_ALLOWED"))) {
+        if(in_array($extension,cbConfig($config))) {
             $file_path = cbConfig("UPLOAD_PATH_FORMAT");
             $file_path = str_replace("{Y}",date('Y'), $file_path);
             $file_path = str_replace("{m}", date('m'), $file_path);
@@ -153,7 +153,7 @@ class CB
      * @return string
      * @throws \Exception
      */
-    public function uploadFile($name, $encrypt = true, $resize_width = null, $resize_height = null)
+    public function uploadFile($name, $encrypt = true, $resize_width = null, $resize_height = null, $type="file")
     {
         if (request()->hasFile($name)) {
             $file = request()->file($name);
@@ -161,7 +161,10 @@ class CB
             $ext = strtolower($file->getClientOriginalExtension());
 
             if($filename && $ext) {
-                return $this->uploadFileProcess($filename, $ext, $file, $encrypt, $resize_width, $resize_height);
+                if($type=="file")
+                    return $this->uploadFileProcess($filename, $ext, $file, $encrypt, $resize_width, $resize_height);
+                else 
+                    return $this->uploadFileProcess($filename, $ext, $file, $encrypt, $resize_width, $resize_height, 'UPLOAD_IMAGE_EXTENSION_ALLOWED');
             }
 
         } else {

@@ -22,7 +22,7 @@
                         <span class="label label-danger">{{ cb()->session()->countNotifications() }}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">Kamu memiliki {{ cb()->session()->countNotifications() }} notifikasi</li>
+                        <li class="header">You have {{ cb()->session()->countNotifications() }} notifications</li>
                         <li>
                         @php
                             $x=1;
@@ -41,7 +41,7 @@
                         @endphp
                         @endforeach
                         </li>
-                        <li class="footer"><a href="{{ cb()->getAdminUrl("notification") }}">lihat semua</a></li>
+                        <li class="footer"><a href="{{ cb()->getAdminUrl("notification") }}">see all</a></li>
                     </ul>
                 </li>
                 <!-- User Account Menu -->

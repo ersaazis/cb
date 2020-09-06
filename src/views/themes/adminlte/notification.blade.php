@@ -2,7 +2,7 @@
 @section('content')
     <div class="box">
         <div class="box-header">
-            <h3 class="box-title">Semua Notifikasi</h3>
+            <h3 class="box-title">All Notifications</h3>
             <div class="box-tools">
                 <a href="{{cb()->getAdminUrl('notification/delete')}}" class="btn btn-danger btn-sm pull-right"><i class="fa fa-times"></i></a>
                 <a href="{{cb()->getAdminUrl('notification/read')}}" class="btn btn-success btn-sm pull-right ml-1" style="margin-right:1rem"><i class="fa fa-check"></i></a>
@@ -12,7 +12,7 @@
             <table class="table table-dark">
                 <tr>
                     <th width='20'>No</th>
-                    <th>Notifikasi</th>
+                    <th>Notification</th>
                 </tr>
                 @php
                     $i=1;
