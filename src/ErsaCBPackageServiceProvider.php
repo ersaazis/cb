@@ -1,4 +1,4 @@
-<?php namespace ersaazis\cb\Providers;
+<?php namespace ersaazis\cb;
 
 use ersaazis\cb\commands\DeveloperCommand;
 use ersaazis\cb\commands\Generate;

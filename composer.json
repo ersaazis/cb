@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ersaazis\\cb\\Providers\\ErsaCBPackageServiceProvider"
+                "ersaazis\\cb\\ErsaCBPackageServiceProvider"
             ]
         }
     }
