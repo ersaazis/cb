@@ -258,7 +258,7 @@ trait ControllerSetting
                Cache::forever("subModule".$actionHashToken, $actionParameters);
            }
 
-           return action(class_basename($controllerName)."@getSubModule",['subModuleKey'=>$actionHashToken])."?ref=".makeReferalUrl($parentTitle);
+           return action(class_basename($controllerName)."@getSubModule",['subModuleKey'=>$actionHash,'ref'=>makeReferalUrl($parentTitle)]);
         }, $condition, $font, $color);
 
     }
