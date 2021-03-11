@@ -6,7 +6,7 @@
  * Time: 6:00 PM
  */
 
-namespace ersaazis\cb\types;
+namespace ersaazis\cb\types\custom;
 
 use ersaazis\cb\controllers\scaffolding\traits\DefaultOption;
 use ersaazis\cb\controllers\scaffolding\traits\Join;

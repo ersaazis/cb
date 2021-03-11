@@ -6,7 +6,7 @@
  * Time: 10:51 PM
  */
 
-namespace ersaazis\cb\types\image;
+namespace ersaazis\cb\types\hidden;
 
 use ersaazis\cb\models\ColumnModel;
 

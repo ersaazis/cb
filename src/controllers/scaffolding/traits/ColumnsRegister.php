@@ -9,42 +9,47 @@
 namespace ersaazis\cb\controllers\scaffolding\traits;
 
 use ersaazis\cb\models\ColumnModel;
-use ersaazis\cb\types\Custom;
+use ersaazis\cb\types\custom\Custom;
 use ersaazis\cb\types\custom\CustomModel;
-use ersaazis\cb\types\Date;
+use ersaazis\cb\types\date\Date;
 use ersaazis\cb\types\date\DateModel;
-use ersaazis\cb\types\Datetime;
+use ersaazis\cb\types\datetime\Datetime;
 use ersaazis\cb\types\datetime\DatetimeModel;
-use ersaazis\cb\types\Email;
+use ersaazis\cb\types\email\Email;
 use ersaazis\cb\types\email\EmailModel;
-use ersaazis\cb\types\File;
+use ersaazis\cb\types\file\File;
 use ersaazis\cb\types\file\FileModel;
-use ersaazis\cb\types\Hidden;
-use ersaazis\cb\types\image\HiddenModel;
-use ersaazis\cb\types\Money;
+use ersaazis\cb\types\hidden\Hidden;
+use ersaazis\cb\types\hidden\HiddenModel;
+use ersaazis\cb\types\money\Money;
 use ersaazis\cb\types\money\MoneyModel;
-use ersaazis\cb\types\Number;
+use ersaazis\cb\types\number\Number;
 use ersaazis\cb\types\number\NumberModel;
-use ersaazis\cb\types\Radio;
+use ersaazis\cb\types\radio\Radio;
 use ersaazis\cb\types\radio\RadioModel;
+
 use ersaazis\cb\types\select_option\SelectOptionModel;
-use ersaazis\cb\types\SelectOption;
+use ersaazis\cb\types\select_option\SelectOption;
+
 use ersaazis\cb\types\SelectQuery;
-use ersaazis\cb\types\SelectTable;
-use ersaazis\cb\types\select_table\SelectTableModel;
-use ersaazis\cb\types\Text;
-use ersaazis\cb\types\Checkbox;
-use ersaazis\cb\types\checkbox\CheckboxModel;
-use ersaazis\cb\types\Image;
-use ersaazis\cb\types\image\ImageModel;
-use ersaazis\cb\types\Password;
-use ersaazis\cb\types\password\PasswordModel;
-use ersaazis\cb\types\text\TextModel;
-use ersaazis\cb\types\text_area\TextAreaModel;
-use ersaazis\cb\types\TextArea;
 use ersaazis\cb\types\time\TimeModel;
 use ersaazis\cb\types\UploadImage;
-use ersaazis\cb\types\Wysiwyg;
+
+use ersaazis\cb\types\select_table\SelectTable;
+use ersaazis\cb\types\select_table\SelectTableModel;
+
+use ersaazis\cb\types\text\Text;
+use ersaazis\cb\types\text\TextModel;
+use ersaazis\cb\types\checkbox\Checkbox;
+use ersaazis\cb\types\checkbox\CheckboxModel;
+use ersaazis\cb\types\image\Image;
+use ersaazis\cb\types\image\ImageModel;
+use ersaazis\cb\types\password\Password;
+use ersaazis\cb\types\password\PasswordModel;
+
+use ersaazis\cb\types\text_area\TextArea;
+use ersaazis\cb\types\text_area\TextAreaModel;
+use ersaazis\cb\types\wysiwyg\Wysiwyg;
 use ersaazis\cb\types\wysiwyg\WysiwygModel;
 use Illuminate\Support\Str;
 

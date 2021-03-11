@@ -1,3 +1,4 @@
+
 @php $exist = []; @endphp
 @foreach(module()->getColumnSingleton()->getAddEditColumns() as $index=>$column)
     <?php /** @var \ersaazis\cb\models\ColumnModel $column */ ?>

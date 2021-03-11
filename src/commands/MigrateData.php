@@ -50,7 +50,7 @@ class MigrateData extends Command
         $php_string = "";
         $additional_tables = cbConfig("ADDITIONAL_DATA_MIGRATION");
 
-        foreach($tables as $table) {
+        foreach(array_reverse($tables) as $table) {
             if(substr($table,0,3) == "cb_" || in_array($table, $additional_tables)) {
                 $this->info("Create seeder for table : ".$table);
                 $rows = DB::table($table)->get();
